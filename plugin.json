@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "humanizer",
+  "version": "1.0.0",
+  "description": "Rewrite AI-sounding prose naturally while preserving meaning, facts, and voice.",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "editing",
+    "humanizer"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Humanizer",
+        "category": "Writing",
+        "shortDescription": "Rewrite AI-sounding prose while preserving its meaning and voice.",
+        "defaultPrompt": [
+          "Use Humanizer to revise the text I provide while preserving its meaning and voice."
+        ],
+        "longDescription": "Use the Humanizer skill to revise prose for AI-writing patterns while preserving supported claims, writer voice, and source meaning."
+      }
+    }
+  }
+}
