@@ -1,5 +1,7 @@
 # Humanizer for agents
 
+![Humanizer for agents: more natural wording while preserving meaning and voice](social-preview.png)
+
 This repository packages the original Humanizer skill for agents that support the Agent Skills format, plus host-specific manifests and uploadable ZIP files. The skill itself is one canonical `SKILL.md`, from [blader/humanizer](https://github.com/blader/humanizer).
 
 ## Install
