@@ -23,11 +23,11 @@ For the current project only, leave out `--global`. The CLI's agent list can cha
 
 ### ChatGPT plugin upload
 
-Upload [`dist/Humanizer-plugin.zip`](dist/Humanizer-plugin.zip) in ChatGPT where plugin upload is available.
+Upload [`Humanizer-plugin.zip`](Humanizer-plugin.zip) in ChatGPT where plugin upload is available.
 
 ### Skill ZIP upload
 
-For products that accept an uploaded skill archive, use [`dist/Humanizer-skill.zip`](dist/Humanizer-skill.zip).
+For products that accept an uploaded skill archive, use [`Humanizer-skill.zip`](Humanizer-skill.zip).
 
 ### Other agents
 

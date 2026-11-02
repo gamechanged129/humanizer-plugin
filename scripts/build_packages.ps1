@@ -4,12 +4,10 @@ Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $repoRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
-$distDir = Join-Path $repoRoot 'dist'
+$packageDir = $repoRoot
 $skillPath = Join-Path $repoRoot 'SKILL.md'
 $licensePath = Join-Path $repoRoot 'LICENSE'
 $upstreamLicensePath = Join-Path $repoRoot 'upstream\humanizer\LICENSE'
-
-New-Item -ItemType Directory -Force -Path $distDir | Out-Null
 
 function Write-PackageZip {
     param(
@@ -62,8 +60,8 @@ $skillEntries = @(
     @{ Source = $upstreamLicensePath; Name = 'humanizer/LICENSE' }
 )
 
-$pluginZip = Join-Path $distDir 'Humanizer-plugin.zip'
-$skillZip = Join-Path $distDir 'Humanizer-skill.zip'
+$pluginZip = Join-Path $packageDir 'Humanizer-plugin.zip'
+$skillZip = Join-Path $packageDir 'Humanizer-skill.zip'
 Write-PackageZip -Destination $pluginZip -Entries $pluginEntries
 Write-PackageZip -Destination $skillZip -Entries $skillEntries
 
