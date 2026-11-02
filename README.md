@@ -9,7 +9,7 @@ This repository packages the original Humanizer skill for agents that support th
 Install it for every agent supported by the Skills CLI:
 
 ```bash
-npx skills add gamechanged129/humanizer-chatgpt-plugin --global --agent '*'
+npx skills add gamechanged129/humanizer-plugin --global --agent '*'
 ```
 
 For the current project only, leave out `--global`. The CLI's agent list can change; this installs to the agents supported by the version you run.
@@ -17,7 +17,7 @@ For the current project only, leave out `--global`. The CLI's agent list can cha
 ### Claude Code plugin
 
 ```text
-/plugin marketplace add gamechanged129/humanizer-chatgpt-plugin
+/plugin marketplace add gamechanged129/humanizer-plugin
 /plugin install humanizer@humanizer-community
 ```
 
